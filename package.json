@@ -1,7 +1,7 @@
 {
   "name": "simple-ts-typeorm-express",
   "engines": {
-    "node": ">=10.9"
+    "node": ">=12.0.0"
   },
   "version": "0.0.1",
   "author": "Ashik",
@@ -13,19 +13,18 @@
     "start": "npm run clean && npm run build && cp -r ./src/env ./dist/ && node dist/app.js"
   },
   "dependencies": {
-    "axios": "^0.19.0",
-    "body-parser": "^1.18.3",
-    "compression": "^1.7.3",
-    "express": "^4.16.4",
-    "mysql": "^2.17.1",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
     "pg": "^8.3.3",
-    "typeorm": "^0.2.18"
+    "typeorm": "^0.2.26"
   },
   "devDependencies": {
-    "@types/body-parser": "^1.17.0",
-    "@types/express": "^4.16.0",
-    "@types/node": "^12.7.2",
-    "typescript": "^3.5.3",
+    "@types/body-parser": "^1.19.0",
+    "@types/express": "^4.17.8",
+    "@types/node": "^12.12.62",
+    "typescript": "^3.9.7",
     "ts-node": "^9.0.0"
   }
 }
