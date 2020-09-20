@@ -8,8 +8,9 @@
   "description": "Sample Typescript / TypeORM / Express.js",
   "scripts": {
     "ts-start": "npx ts-node src/app.ts",
-    "build": "tsc src/app.ts",
-    "start": "npm build && node dist/app.js"
+    "build": "tsc -b -v",
+    "clean": "tsc -b --clean",
+    "start": "npm run clean && npm run build && cp -r ./src/env ./dist/ && node dist/app.js"
   },
   "dependencies": {
     "axios": "^0.19.0",
