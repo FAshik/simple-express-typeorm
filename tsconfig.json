@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "sourceMap": true,
+      "baseUrl": "./src",
+      "lib": ["dom", "es5", "es6", "es7"],
+      "target": "es5",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true
+    },
+    "include": ["./src/**/*", "test/test.ts"],
+    "exclude" : [
+      "**/**/node_modules",
+      "node_modules"
+    ]
+  }
