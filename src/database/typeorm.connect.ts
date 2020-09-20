@@ -5,10 +5,6 @@ export class TypeormConnect {
 
   constructor() { }
 
-  /**
-   * @description Connect to database server
-   * @async
-   */
   static async connect(): Promise<Connection> {
     let dbType;
     switch (typeorm.type) {
